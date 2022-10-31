@@ -18,6 +18,13 @@ public class MathClassExample {
         float b = -18.09F;
         System.out.println(Math.abs(b));
         
+        //round() returns the nearly round figure of a number
+        double val = 56.87;
+        System.out.println(Math.round(val));
+        
+        val = 56.45;
+        System.out.println(Math.round(val));
+        
         //max() returns the maximum number between two number
         int num1 = 10;
         int num2 = 12;
