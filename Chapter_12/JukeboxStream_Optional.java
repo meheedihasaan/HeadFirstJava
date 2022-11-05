@@ -82,7 +82,7 @@ public class JukeboxStream_Optional {
                                   .filter(song-> song.getYear() == 2017)
                                   .findFirst();
         if(optional.isPresent()){
-            System.out.println("Song which played first in 2017 is: "+optional);
+            System.out.println("Song which played first in 2017 is: "+optional.get().getTitle());
         }
         else{
             System.out.println("No song found");
