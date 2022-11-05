@@ -97,5 +97,12 @@ public class JukeboxStream_Filtering {
                             .filter(song-> song.getTitle().startsWith("L"))
                             .collect(Collectors.toList());
         System.out.println("Songs starting with 'L' are: \n"+ songsL); 
+        System.out.println();
+        
+        //Boolean operation
+        boolean flag = MockSongs.getSongs().stream()
+                        .anyMatch(song-> song.getTitle().equals("Faded"));
+        System.out.println("Does Faded song exist in SongList: "+flag);
+        System.out.println();
     }
 }
