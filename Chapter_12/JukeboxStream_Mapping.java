@@ -93,6 +93,14 @@ public class JukeboxStream_Mapping {
         System.out.println("Distinct genres are: "+genre);
         System.out.println();
         
+        //Counting Songs with distinct title
+        Long count = MockSongs.getSongs().stream()
+                        .map(song-> song.getTitle())
+                        .distinct()
+                        .count();
+        System.out.println("Number of distinct song titles are: "+count);
+        System.out.println();
+        
         //Creating a new List - artist of Hundred years, except Kia
         String title = "Hundred years";
         List<String> artistofHundredYears = MockSongs1.getSongs().stream()
